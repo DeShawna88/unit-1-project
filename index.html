@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <label id="hamburger-icon" for="hamburger-btn">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <input id="hamburger-btn" type="checkbox" />
+        <nav>
+          <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Introduction</a></li>
+            <li><a href="/">Mammals</a></li>
+            <li><a href="/">Birds</a></li>
+            <li><a href="/">Reptiles</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about">
+            <h1>The Animal Kingdom</h1>
+                <p>Mammals</p>
+                <button id="mammal-like">I Love Mammals!</button>
+                <p>Birds</p>
+                <button id="bird-like">I Love Birds!</button>
+                <p>Reptiles</p>
+                <button id="reptile-like">I Love Reptiles!</button>
+        </div>
+        <div class="mammal">
+            <h2>Mammals</h2>
+                <p>Three identifing factors of mammals that are not found in other animals:</p>
+                    <ul>
+                        <li>Three middle ear bones</li>
+                        <li>Fur or hair</li>
+                        <li>The females produce milk</li>
+                    </ul>
+                <p>Being warm-blooded mammals can adapt to many different environments. </p>
+                <p>What is you favorite mammal?</p> 
+                <input>
+                <button class="fav-mammal">Add mammal</button>
+        </div>
+        <div class="bird">
+            <h3>Birds</h3>
+                <p>The main identifying feature of birds is that they have feathers.</p>
+                <p>Even though all birds have feathers, not all birds can fly.</p>
+                <p>What is your favorite bird?</p>
+                <input>
+                <button class="fav-bird">Add bird</button>
+        </div>
+        <div class="reptiles">
+            <h4>Reptiles</h4>
+            <p>Two identifying features of reptiles are:</p>
+                <ul>
+                    <li>They are cold-blooded</li>
+                    <li>They have scales</li>
+                </ul>
+            <p>Because they are cold-blooded, their body temperature is controlled by their environment.</p>
+            <p>What is your favorite reptile?</p>
+            <input>
+            <button class="fav-reptile">Add reptile</button>
+        </div>
+    </main>
+</body>
+</html>
