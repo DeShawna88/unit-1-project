@@ -9,12 +9,29 @@ const birdListElement = document.querySelector('.bird-comment');
 const reptileListElement = document.querySelector('.reptile-comment');
 
 
-let mammalLikeCount = 0;
-let birdLikeCount = 0;
-let reptileLikeCount = 0;
+let mammalLikesCount = 0;
+let birdLikesCount = 0;
+let reptileLikesCount = 0;
 
-// likeMammalElement.addEventListener('click', () => {
-    // })
+const mammalLikes = () => {
+    mammalLikesCount = mammalLikesCount + 1;
+    console.log(mammalLikesCount);
+    likeMammalElement.textContent = `${mammalLikesCount} I Love Mammals!`;
+}
+
+const birdLikes = () => {
+    birdLikesCount = birdLikesCount + 1;
+    console.log(birdLikesCount);
+    likeBirdElement.textContent = `${birdLikesCount} I Love Birds!`;
+}
+
+const reptileLikes = () => {
+    reptileLikesCount = reptileLikesCount + 1;
+    console.log(birdLikesCount);
+    likeReptileElement.textContent = `${reptileLikesCount} I Love Reptiles!`;
+}
+
+likeMammalElement.addEventListener('click', mammalLikes)
 
 const mammalInputElement = document.querySelector('.mammal-input');
 mammalCommentElement.addEventListener('click', () => {
@@ -25,6 +42,7 @@ mammalCommentElement.addEventListener('click', () => {
         mammalInputElement.value = '';
     }
 })
+likeBirdElement.addEventListener('click', birdLikes)
 
 const birdInputElement = document.querySelector('.bird-input')
 birdCommentElement.addEventListener('click', () => {
@@ -35,6 +53,8 @@ birdCommentElement.addEventListener('click', () => {
         birdInputElement.value = '';
     }
 })
+
+likeReptileElement.addEventListener('click', reptileLikes)
 
 const reptileInputElement = document.querySelector('.reptile-input')
 reptileCommentElement.addEventListener('click', () => {
