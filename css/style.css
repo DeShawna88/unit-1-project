@@ -2,9 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-  
+
 body {
-    background-color: #ffffff;
+    background-color: #ce7dd1;
     font-family: Arial, Helvetica, sans-serif;
 }
   
@@ -68,10 +68,26 @@ nav a {
 }
 
 .about {
-    justify-content: space-around;
+    justify-items: center;
     padding: 20px;
 }
 
 h1 {
     padding-bottom: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+.mammal {
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bird {
+    justify-items: center;
+    margin-top: 20px;
+    border: 50px;
 }
