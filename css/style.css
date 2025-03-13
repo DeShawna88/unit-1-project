@@ -5,6 +5,16 @@ body {
     display: grid;
     min-height: 100vh;
 }
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.lightmode {
+    background-color: #549131;
+    color: black;
+}
   
 ul {
     list-style: none;
@@ -76,11 +86,13 @@ nav a {
     justify-items: center;
     margin-top: 20px;
     border: 50px;
+    font-size: 20px;
 }
 
 .reptiles {
     justify-items: center;
-    
+    margin-bottom: 50px;
+    font-size: 20px;
 }
 
 button {
@@ -92,4 +104,5 @@ button {
 button:hover {
     color: white;
     background: rgba(109, 21, 21, 0.514);
+    cursor: pointer;
 }

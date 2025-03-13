@@ -42,6 +42,14 @@ mammalCommentElement.addEventListener('click', () => {
         mammalInputElement.value = '';
     }
 })
+
+mammalCommentElement.addEventListener('mouseover', (event) => {
+   event.target.style.color = '#549131';
+})
+mammalCommentElement.addEventListener('mouseout', (event) => {
+    event.target.style.color = 'black';
+})
+
 likeBirdElement.addEventListener('click', birdLikes)
 
 const birdInputElement = document.querySelector('.bird-input')
@@ -54,6 +62,13 @@ birdCommentElement.addEventListener('click', () => {
     }
 })
 
+birdCommentElement.addEventListener('mouseover', (event) => {
+    event.target.style.color = '#549131';
+ })
+ birdCommentElement.addEventListener('mouseout', (event) => {
+    event.target.style.color = 'black';
+ })
+
 likeReptileElement.addEventListener('click', reptileLikes)
 
 const reptileInputElement = document.querySelector('.reptile-input')
@@ -64,4 +79,24 @@ reptileCommentElement.addEventListener('click', () => {
         reptileListElement.appendChild(reptileElement);
         reptileInputElement.value = '';
     }
+})
+
+reptileCommentElement.addEventListener('mouseover', (event) => {
+    event.target.style.color = '#549131';
+})
+reptileCommentElement.addEventListener('mouseout', (event) => {
+    event.target.style.color = 'black';
+})
+
+const toggleElement = document.querySelector('#toggle')
+const body = document.body
+body.classList.add('lightmode')
+body.classList.add('darkmode')
+toggleElement.addEventListener('click', () => {
+    if(body.classList.contains('lightmode')) {
+        body.classList.replace('lightmode', 'darkmode');
+    }
+    else if (
+        body.classList.replace('darkmode', 'lightmode')
+    );
 })
