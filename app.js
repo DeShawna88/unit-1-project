@@ -31,6 +31,8 @@ const reptileLikes = () => {
     likeReptileElement.textContent = `${reptileLikesCount} I Love Reptiles!`;
 }
 
+// Event Listeners
+
 likeMammalElement.addEventListener('click', mammalLikes)
 
 const mammalInputElement = document.querySelector('.mammal-input');
@@ -99,4 +101,13 @@ toggleElement.addEventListener('click', () => {
     else if (
         body.classList.replace('darkmode', 'lightmode')
     );
+})
+
+const imgElement = document.querySelector('img')
+imgElement.addEventListener('click', (event) => {
+        if (imgElement.src.includes('dog.jpg')){
+        imgElement.src = 'parrot.jpg';
+    }   else {
+        imgElement.src = 'dog.jpg'
+    }
 })

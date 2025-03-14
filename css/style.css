@@ -6,6 +6,18 @@ body {
     min-height: 100vh;
 }
 
+@media (min-width: 550px) {
+    .navigation {
+      display: flex;
+      gap: 16px;
+    }
+  
+    #hamburger-icon {
+      display: none;
+    }
+  }
+  
+
 .darkmode {
     background-color: black;
     color: white;
@@ -105,4 +117,13 @@ button:hover {
     color: white;
     background: rgba(109, 21, 21, 0.514);
     cursor: pointer;
+}
+
+#toggle {
+    justify-items: center;
+}
+
+img {
+    justify-items: center;
+    margin: 50px;
 }
